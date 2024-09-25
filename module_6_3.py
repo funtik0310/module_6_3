@@ -18,6 +18,8 @@ class Eagle:
         self.y_distance += dy
 
 class Pegasus(Horse, Eagle):
+    sound = 'I train, eat, sleep, and repeat'
+    
     def __init__(self):
         super().__init__()
 
@@ -41,3 +43,4 @@ p1.move(-5, 20)
 print(p1.get_pos())
 
 p1.voice()
+
